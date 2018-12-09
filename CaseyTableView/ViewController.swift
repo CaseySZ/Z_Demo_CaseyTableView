@@ -21,8 +21,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         _tableview.frame = self.view.bounds
         self.view.addSubview(_tableview)
         
-        
-    
     }
     
     //MARK: tableview delegate

@@ -65,16 +65,13 @@ class CaseyTableView: UIScrollView {
         self.contentSize = CGSize.init(width: self.frame.width, height: totalHeight)
     }
     
-    
-    
-    
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         
         let startY = self.contentOffset.y < 0 ? 0 : self.contentOffset.y
-        let endY = self.contentOffset.y + self.frame.height > self.contentSize.height ?  self.contentSize.height - self.frame.height : self.contentOffset.y + self.frame.height
+        let endY = (self.contentOffset.y + self.frame.height > self.contentSize.height) ?  self.contentSize.height : (self.contentOffset.y + self.frame.height)
         
+        /*
         var startRowIndex = -1
         var endRowIndex = -1
         
@@ -91,6 +88,15 @@ class CaseyTableView: UIScrollView {
             index = index + 1
         }
         
+        */
+        
+        
+        let startRowIndex = binarySeach(arry: _rowModelArr, start: 0, end: _rowModelArr.count-1, targert: startY)
+        let endRowIndex = binarySeach(arry: _rowModelArr, start: 0, end: _rowModelArr.count-1, targert: endY)
+        
+        if startRowIndex == -1 || endRowIndex == -1{
+            return 
+        }
         
         for index in startRowIndex...endRowIndex {
             
@@ -122,10 +128,65 @@ class CaseyTableView: UIScrollView {
                     _reuseCellPoolArr.append(cell)
                 }
             }
-            
         }
     }
     
+    func dequeueReusableCell(withIdentifier: String) -> UITableViewCell? {
+       
+        if _reuseCellPoolArr.count > 0{
+            let cell = _reuseCellPoolArr.first
+            _reuseCellPoolArr.remove(at: 0)
+            return cell
+        }else{
+            return nil
+        }
+        
+    }
     
+    func binarySeach(arry:Array<RowInfoModel>, start:Int , end:Int, targert:CGFloat) -> Int {
+    
+        if start < 0 || end < 0 {
+            return -1
+        }
+        
+        if start == end  {
+            
+            let model = arry[start]
+            if model.y! <= targert && targert < model.y! + model.height! {
+                return start
+            }else{
+                return -1
+            }
+        }else if (end - start == 1){
+            
+            
+            for index in start...end {
+                let model = arry[index]
+                if model.y! <= targert && targert < model.y! + model.height! {
+                    return index
+                }
+            }
+            
+            return -1
+            
+        }else  {
+            
+            let middle = start + (end - start)/2
+            
+            let model = arry[middle]
+            if model.y! <= targert && targert < model.y! + model.height! {
+                return middle
+            }else if (targert > model.y! + model.height!){
+                 // 在右边
+                return binarySeach(arry: arry, start: middle+1, end: end, targert: targert)
+                
+            }else {
+                // 在左边
+                return binarySeach(arry: arry, start: start, end: middle-1, targert: targert)
+                
+            }
+        }
+    
+    }
 
 }
