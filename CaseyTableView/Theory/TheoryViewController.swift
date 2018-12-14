@@ -8,12 +8,13 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, CaseyTableViewDelegate {
+class TheoryViewController: UIViewController, CaseyTableViewDelegate {
 
     let _tableview = CaseyTableView()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Theory"
         self.view.backgroundColor = .white
         
         _tableview.cyDelegate = self

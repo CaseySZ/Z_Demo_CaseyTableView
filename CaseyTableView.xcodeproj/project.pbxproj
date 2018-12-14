@@ -12,10 +12,23 @@
 		C91C8E4E21BA5F0500952B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91C8E4C21BA5F0500952B31 /* Main.storyboard */; };
 		C91C8E5021BA5F0500952B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91C8E4F21BA5F0500952B31 /* Assets.xcassets */; };
 		C91C8E5321BA5F0500952B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91C8E5121BA5F0500952B31 /* LaunchScreen.storyboard */; };
-		C91C8E5B21BA5FC800952B31 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E5A21BA5FC800952B31 /* SecondViewController.swift */; };
+		C91C8E5B21BA5FC800952B31 /* TheoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E5A21BA5FC800952B31 /* TheoryViewController.swift */; };
 		C91C8E7621BA6B1200952B31 /* CaseyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E7521BA6B1200952B31 /* CaseyTableView.swift */; };
 		C91C8E7821BA711600952B31 /* RowInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E7721BA711600952B31 /* RowInfoModel.swift */; };
 		C91C8E7A21BA72AD00952B31 /* CaseyTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E7921BA72AD00952B31 /* CaseyTableViewDelegate.swift */; };
+		C94F3D8621C352CB008D94D6 /* TheoryInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D8521C352CB008D94D6 /* TheoryInitViewController.swift */; };
+		C94F3D8A21C353DC008D94D6 /* HeaderSuspendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D8921C353DC008D94D6 /* HeaderSuspendViewController.swift */; };
+		C94F3D8C21C353F3008D94D6 /* DeleteStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D8B21C353F3008D94D6 /* DeleteStyleViewController.swift */; };
+		C94F3D8E21C35618008D94D6 /* ProjectFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D8D21C35618008D94D6 /* ProjectFile.swift */; };
+		C94F3D9A21C3565A008D94D6 /* ReportTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9221C35659008D94D6 /* ReportTableView.swift */; };
+		C94F3D9B21C3565A008D94D6 /* ReportTableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9321C35659008D94D6 /* ReportTableViewTest.swift */; };
+		C94F3D9C21C3565A008D94D6 /* CellEditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9521C3565A008D94D6 /* CellEditButton.swift */; };
+		C94F3D9D21C3565A008D94D6 /* DeleteStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9621C3565A008D94D6 /* DeleteStatusView.swift */; };
+		C94F3D9E21C3565A008D94D6 /* DepositReportInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9721C3565A008D94D6 /* DepositReportInfoCell.swift */; };
+		C94F3DA721C35837008D94D6 /* UIColorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA121C35837008D94D6 /* UIColorHandle.swift */; };
+		C94F3DA821C35837008D94D6 /* UIViewFrameHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA321C35837008D94D6 /* UIViewFrameHandle.swift */; };
+		C94F3DA921C35837008D94D6 /* UIViewSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA421C35837008D94D6 /* UIViewSearchView.swift */; };
+		C94F3DAA21C35837008D94D6 /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA621C35837008D94D6 /* DispatchOnce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +39,23 @@
 		C91C8E4F21BA5F0500952B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91C8E5221BA5F0500952B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C91C8E5421BA5F0500952B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C91C8E5A21BA5FC800952B31 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C91C8E5A21BA5FC800952B31 /* TheoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewController.swift; sourceTree = "<group>"; };
 		C91C8E7521BA6B1200952B31 /* CaseyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyTableView.swift; sourceTree = "<group>"; };
 		C91C8E7721BA711600952B31 /* RowInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowInfoModel.swift; sourceTree = "<group>"; };
 		C91C8E7921BA72AD00952B31 /* CaseyTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyTableViewDelegate.swift; sourceTree = "<group>"; };
+		C94F3D8521C352CB008D94D6 /* TheoryInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryInitViewController.swift; sourceTree = "<group>"; };
+		C94F3D8921C353DC008D94D6 /* HeaderSuspendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSuspendViewController.swift; sourceTree = "<group>"; };
+		C94F3D8B21C353F3008D94D6 /* DeleteStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteStyleViewController.swift; sourceTree = "<group>"; };
+		C94F3D8D21C35618008D94D6 /* ProjectFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFile.swift; sourceTree = "<group>"; };
+		C94F3D9221C35659008D94D6 /* ReportTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableView.swift; sourceTree = "<group>"; };
+		C94F3D9321C35659008D94D6 /* ReportTableViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewTest.swift; sourceTree = "<group>"; };
+		C94F3D9521C3565A008D94D6 /* CellEditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellEditButton.swift; sourceTree = "<group>"; };
+		C94F3D9621C3565A008D94D6 /* DeleteStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteStatusView.swift; sourceTree = "<group>"; };
+		C94F3D9721C3565A008D94D6 /* DepositReportInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositReportInfoCell.swift; sourceTree = "<group>"; };
+		C94F3DA121C35837008D94D6 /* UIColorHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHandle.swift; sourceTree = "<group>"; };
+		C94F3DA321C35837008D94D6 /* UIViewFrameHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFrameHandle.swift; sourceTree = "<group>"; };
+		C94F3DA421C35837008D94D6 /* UIViewSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSearchView.swift; sourceTree = "<group>"; };
+		C94F3DA621C35837008D94D6 /* DispatchOnce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,24 +90,88 @@
 			children = (
 				C91C8E4821BA5F0500952B31 /* AppDelegate.swift */,
 				C91C8E4A21BA5F0500952B31 /* ViewController.swift */,
-				C91C8E5A21BA5FC800952B31 /* SecondViewController.swift */,
-				C91C8E7421BA683F00952B31 /* CaseyTableView */,
-				C91C8E4C21BA5F0500952B31 /* Main.storyboard */,
+				C94F3D8D21C35618008D94D6 /* ProjectFile.swift */,
+				C94F3D9F21C3582E008D94D6 /* BaseEnv */,
+				C91C8E7421BA683F00952B31 /* Theory */,
+				C94F3D8721C353A9008D94D6 /* HeaderSuspend */,
+				C94F3D8821C353BA008D94D6 /* DeleteStyle */,
 				C91C8E4F21BA5F0500952B31 /* Assets.xcassets */,
+				C91C8E4C21BA5F0500952B31 /* Main.storyboard */,
 				C91C8E5121BA5F0500952B31 /* LaunchScreen.storyboard */,
 				C91C8E5421BA5F0500952B31 /* Info.plist */,
 			);
 			path = CaseyTableView;
 			sourceTree = "<group>";
 		};
-		C91C8E7421BA683F00952B31 /* CaseyTableView */ = {
+		C91C8E7421BA683F00952B31 /* Theory */ = {
 			isa = PBXGroup;
 			children = (
+				C94F3D8521C352CB008D94D6 /* TheoryInitViewController.swift */,
+				C91C8E5A21BA5FC800952B31 /* TheoryViewController.swift */,
 				C91C8E7521BA6B1200952B31 /* CaseyTableView.swift */,
 				C91C8E7921BA72AD00952B31 /* CaseyTableViewDelegate.swift */,
 				C91C8E7721BA711600952B31 /* RowInfoModel.swift */,
 			);
-			path = CaseyTableView;
+			path = Theory;
+			sourceTree = "<group>";
+		};
+		C94F3D8721C353A9008D94D6 /* HeaderSuspend */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3D8921C353DC008D94D6 /* HeaderSuspendViewController.swift */,
+			);
+			path = HeaderSuspend;
+			sourceTree = "<group>";
+		};
+		C94F3D8821C353BA008D94D6 /* DeleteStyle */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3D8B21C353F3008D94D6 /* DeleteStyleViewController.swift */,
+				C94F3D9221C35659008D94D6 /* ReportTableView.swift */,
+				C94F3D9321C35659008D94D6 /* ReportTableViewTest.swift */,
+				C94F3D9521C3565A008D94D6 /* CellEditButton.swift */,
+				C94F3D9621C3565A008D94D6 /* DeleteStatusView.swift */,
+				C94F3D9721C3565A008D94D6 /* DepositReportInfoCell.swift */,
+			);
+			path = DeleteStyle;
+			sourceTree = "<group>";
+		};
+		C94F3D9F21C3582E008D94D6 /* BaseEnv */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3DA021C35837008D94D6 /* UIColor Category */,
+				C94F3DA221C35837008D94D6 /* UIView Frame Category */,
+				C94F3DA521C35837008D94D6 /* DispatchQueue Category */,
+			);
+			path = BaseEnv;
+			sourceTree = "<group>";
+		};
+		C94F3DA021C35837008D94D6 /* UIColor Category */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3DA121C35837008D94D6 /* UIColorHandle.swift */,
+			);
+			name = "UIColor Category";
+			path = "../../../CaseyTableViewDeleteStyle/CaseyTableViewDeleteStyle/UIColor Category";
+			sourceTree = "<group>";
+		};
+		C94F3DA221C35837008D94D6 /* UIView Frame Category */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3DA321C35837008D94D6 /* UIViewFrameHandle.swift */,
+				C94F3DA421C35837008D94D6 /* UIViewSearchView.swift */,
+			);
+			name = "UIView Frame Category";
+			path = "../../../CaseyTableViewDeleteStyle/CaseyTableViewDeleteStyle/UIView Frame Category";
+			sourceTree = "<group>";
+		};
+		C94F3DA521C35837008D94D6 /* DispatchQueue Category */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3DA621C35837008D94D6 /* DispatchOnce.swift */,
+			);
+			name = "DispatchQueue Category";
+			path = "../../../CaseyTableViewDeleteStyle/CaseyTableViewDeleteStyle/DispatchQueue Category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +245,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91C8E5B21BA5FC800952B31 /* SecondViewController.swift in Sources */,
+				C91C8E5B21BA5FC800952B31 /* TheoryViewController.swift in Sources */,
+				C94F3D8E21C35618008D94D6 /* ProjectFile.swift in Sources */,
 				C91C8E4B21BA5F0500952B31 /* ViewController.swift in Sources */,
+				C94F3D9D21C3565A008D94D6 /* DeleteStatusView.swift in Sources */,
+				C94F3D9B21C3565A008D94D6 /* ReportTableViewTest.swift in Sources */,
+				C94F3DA921C35837008D94D6 /* UIViewSearchView.swift in Sources */,
+				C94F3D8A21C353DC008D94D6 /* HeaderSuspendViewController.swift in Sources */,
+				C94F3D9C21C3565A008D94D6 /* CellEditButton.swift in Sources */,
+				C94F3DA721C35837008D94D6 /* UIColorHandle.swift in Sources */,
 				C91C8E7A21BA72AD00952B31 /* CaseyTableViewDelegate.swift in Sources */,
 				C91C8E4921BA5F0500952B31 /* AppDelegate.swift in Sources */,
+				C94F3D9E21C3565A008D94D6 /* DepositReportInfoCell.swift in Sources */,
+				C94F3D9A21C3565A008D94D6 /* ReportTableView.swift in Sources */,
+				C94F3DA821C35837008D94D6 /* UIViewFrameHandle.swift in Sources */,
+				C94F3DAA21C35837008D94D6 /* DispatchOnce.swift in Sources */,
+				C94F3D8621C352CB008D94D6 /* TheoryInitViewController.swift in Sources */,
+				C94F3D8C21C353F3008D94D6 /* DeleteStyleViewController.swift in Sources */,
 				C91C8E7821BA711600952B31 /* RowInfoModel.swift in Sources */,
 				C91C8E7621BA6B1200952B31 /* CaseyTableView.swift in Sources */,
 			);

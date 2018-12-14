@@ -1,19 +1,21 @@
 //
-//  ViewController.swift
+//  TheoryInitViewController.swift
 //  CaseyTableView
 //
-//  Created by Casey on 07/12/2018.
+//  Created by Casey on 14/12/2018.
 //  Copyright © 2018 Casey. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class TheoryInitViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let _tableview = UITableView()
-    var _cellArr = ["initTheoryStudy", "Theory", "headerSuspend", "DeleteStyle"];
+    var _cellArr = Array<NSValue>()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "initTheoryStudy"
         
         _tableview.estimatedRowHeight = 0
         _tableview.delegate = self
@@ -27,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return _cellArr.count
+        return 60
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -44,7 +46,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
         }
         
-        cell!.textLabel?.text =  _cellArr[indexPath.row]
+        cell!.textLabel?.text = String(indexPath.row)
+        var exist = false
+        for value in _cellArr {
+            
+            if let storeCell = value.nonretainedObjectValue as? UITableViewCell{
+                if (storeCell == cell) {
+                    exist = true
+                    break
+                }
+            }
+            
+        }
+        
+        if !exist {
+            
+            _cellArr.append(NSValue.init(nonretainedObject: cell))
+            
+        }
         
         return cell!
     }
@@ -52,19 +71,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if indexPath.row == 0 {
-            self.navigationController?.pushViewController(TheoryInitViewController(), animated: true)
-        }else if indexPath.row == 1 {
-            self.navigationController?.pushViewController(TheoryViewController(), animated: true)
-        }else if indexPath.row == 2 {
-            self.navigationController?.pushViewController(HeaderSuspendViewController(), animated: true)
-        }else {
-            self.navigationController?.pushViewController(DeleteStyleViewController(), animated: true)
-        }
         
+         print(_cellArr.count)
         
     }
-    
-    
-}
 
+}
