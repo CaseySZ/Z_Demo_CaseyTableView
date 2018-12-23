@@ -36,12 +36,20 @@ class ReportTableView: UITableView {
     var deleteStatusView = DeleteStatusView()
     
     
-    override init(frame: CGRect, style: UITableView.Style) {
+    override init(frame: CGRect, style: UITableViewStyle) {
         
         super.init(frame: frame, style: style)
         ReportTableView.changeSysMethodForCellDeleteAction()
         deleteStatusView.backgroundColor = UIColor.clear
+        
     }
+    
+//    override init(frame: CGRect, style: UITableView.Style) {
+//        
+//        super.init(frame: frame, style: style)
+//        ReportTableView.changeSysMethodForCellDeleteAction()
+//        deleteStatusView.backgroundColor = UIColor.clear
+//    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

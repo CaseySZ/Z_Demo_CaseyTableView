@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11FE42C521CF2F1B00C83C6E /* UIColorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C121CF2F1B00C83C6E /* UIColorHandle.swift */; };
+		11FE42C621CF2F1B00C83C6E /* UIViewFrameHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C321CF2F1B00C83C6E /* UIViewFrameHandle.swift */; };
+		11FE42C721CF2F1B00C83C6E /* UIViewSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C421CF2F1B00C83C6E /* UIViewSearchView.swift */; };
+		11FE42CA21CF2F2500C83C6E /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C921CF2F2500C83C6E /* DispatchOnce.swift */; };
 		C91C8E4921BA5F0500952B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E4821BA5F0500952B31 /* AppDelegate.swift */; };
 		C91C8E4B21BA5F0500952B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E4A21BA5F0500952B31 /* ViewController.swift */; };
 		C91C8E4E21BA5F0500952B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91C8E4C21BA5F0500952B31 /* Main.storyboard */; };
@@ -25,13 +29,13 @@
 		C94F3D9C21C3565A008D94D6 /* CellEditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9521C3565A008D94D6 /* CellEditButton.swift */; };
 		C94F3D9D21C3565A008D94D6 /* DeleteStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9621C3565A008D94D6 /* DeleteStatusView.swift */; };
 		C94F3D9E21C3565A008D94D6 /* DepositReportInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3D9721C3565A008D94D6 /* DepositReportInfoCell.swift */; };
-		C94F3DA721C35837008D94D6 /* UIColorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA121C35837008D94D6 /* UIColorHandle.swift */; };
-		C94F3DA821C35837008D94D6 /* UIViewFrameHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA321C35837008D94D6 /* UIViewFrameHandle.swift */; };
-		C94F3DA921C35837008D94D6 /* UIViewSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA421C35837008D94D6 /* UIViewSearchView.swift */; };
-		C94F3DAA21C35837008D94D6 /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F3DA621C35837008D94D6 /* DispatchOnce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11FE42C121CF2F1B00C83C6E /* UIColorHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHandle.swift; sourceTree = "<group>"; };
+		11FE42C321CF2F1B00C83C6E /* UIViewFrameHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFrameHandle.swift; sourceTree = "<group>"; };
+		11FE42C421CF2F1B00C83C6E /* UIViewSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSearchView.swift; sourceTree = "<group>"; };
+		11FE42C921CF2F2500C83C6E /* DispatchOnce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
 		C91C8E4521BA5F0500952B31 /* CaseyTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseyTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91C8E4821BA5F0500952B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C91C8E4A21BA5F0500952B31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,10 +56,6 @@
 		C94F3D9521C3565A008D94D6 /* CellEditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellEditButton.swift; sourceTree = "<group>"; };
 		C94F3D9621C3565A008D94D6 /* DeleteStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteStatusView.swift; sourceTree = "<group>"; };
 		C94F3D9721C3565A008D94D6 /* DepositReportInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositReportInfoCell.swift; sourceTree = "<group>"; };
-		C94F3DA121C35837008D94D6 /* UIColorHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHandle.swift; sourceTree = "<group>"; };
-		C94F3DA321C35837008D94D6 /* UIViewFrameHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFrameHandle.swift; sourceTree = "<group>"; };
-		C94F3DA421C35837008D94D6 /* UIViewSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSearchView.swift; sourceTree = "<group>"; };
-		C94F3DA621C35837008D94D6 /* DispatchOnce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +69,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11FE42BF21CF2F0D00C83C6E /* BaseEvn */ = {
+			isa = PBXGroup;
+			children = (
+				11FE42C821CF2F2500C83C6E /* DispatchQueue Category */,
+				11FE42C021CF2F1B00C83C6E /* UIColor Category */,
+				11FE42C221CF2F1B00C83C6E /* UIView Frame Category */,
+			);
+			path = BaseEvn;
+			sourceTree = "<group>";
+		};
+		11FE42C021CF2F1B00C83C6E /* UIColor Category */ = {
+			isa = PBXGroup;
+			children = (
+				11FE42C121CF2F1B00C83C6E /* UIColorHandle.swift */,
+			);
+			path = "UIColor Category";
+			sourceTree = "<group>";
+		};
+		11FE42C221CF2F1B00C83C6E /* UIView Frame Category */ = {
+			isa = PBXGroup;
+			children = (
+				11FE42C321CF2F1B00C83C6E /* UIViewFrameHandle.swift */,
+				11FE42C421CF2F1B00C83C6E /* UIViewSearchView.swift */,
+			);
+			path = "UIView Frame Category";
+			sourceTree = "<group>";
+		};
+		11FE42C821CF2F2500C83C6E /* DispatchQueue Category */ = {
+			isa = PBXGroup;
+			children = (
+				11FE42C921CF2F2500C83C6E /* DispatchOnce.swift */,
+			);
+			path = "DispatchQueue Category";
+			sourceTree = "<group>";
+		};
 		C91C8E3C21BA5F0500952B31 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +126,7 @@
 				C91C8E4821BA5F0500952B31 /* AppDelegate.swift */,
 				C91C8E4A21BA5F0500952B31 /* ViewController.swift */,
 				C94F3D8D21C35618008D94D6 /* ProjectFile.swift */,
-				C94F3D9F21C3582E008D94D6 /* BaseEnv */,
+				11FE42BF21CF2F0D00C83C6E /* BaseEvn */,
 				C91C8E7421BA683F00952B31 /* Theory */,
 				C94F3D8721C353A9008D94D6 /* HeaderSuspend */,
 				C94F3D8821C353BA008D94D6 /* DeleteStyle */,
@@ -134,44 +169,6 @@
 				C94F3D9721C3565A008D94D6 /* DepositReportInfoCell.swift */,
 			);
 			path = DeleteStyle;
-			sourceTree = "<group>";
-		};
-		C94F3D9F21C3582E008D94D6 /* BaseEnv */ = {
-			isa = PBXGroup;
-			children = (
-				C94F3DA021C35837008D94D6 /* UIColor Category */,
-				C94F3DA221C35837008D94D6 /* UIView Frame Category */,
-				C94F3DA521C35837008D94D6 /* DispatchQueue Category */,
-			);
-			path = BaseEnv;
-			sourceTree = "<group>";
-		};
-		C94F3DA021C35837008D94D6 /* UIColor Category */ = {
-			isa = PBXGroup;
-			children = (
-				C94F3DA121C35837008D94D6 /* UIColorHandle.swift */,
-			);
-			name = "UIColor Category";
-			path = "../../../CaseyTableViewDeleteStyle/CaseyTableViewDeleteStyle/UIColor Category";
-			sourceTree = "<group>";
-		};
-		C94F3DA221C35837008D94D6 /* UIView Frame Category */ = {
-			isa = PBXGroup;
-			children = (
-				C94F3DA321C35837008D94D6 /* UIViewFrameHandle.swift */,
-				C94F3DA421C35837008D94D6 /* UIViewSearchView.swift */,
-			);
-			name = "UIView Frame Category";
-			path = "../../../CaseyTableViewDeleteStyle/CaseyTableViewDeleteStyle/UIView Frame Category";
-			sourceTree = "<group>";
-		};
-		C94F3DA521C35837008D94D6 /* DispatchQueue Category */ = {
-			isa = PBXGroup;
-			children = (
-				C94F3DA621C35837008D94D6 /* DispatchOnce.swift */,
-			);
-			name = "DispatchQueue Category";
-			path = "../../../CaseyTableViewDeleteStyle/CaseyTableViewDeleteStyle/DispatchQueue Category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,16 +247,16 @@
 				C91C8E4B21BA5F0500952B31 /* ViewController.swift in Sources */,
 				C94F3D9D21C3565A008D94D6 /* DeleteStatusView.swift in Sources */,
 				C94F3D9B21C3565A008D94D6 /* ReportTableViewTest.swift in Sources */,
-				C94F3DA921C35837008D94D6 /* UIViewSearchView.swift in Sources */,
+				11FE42C721CF2F1B00C83C6E /* UIViewSearchView.swift in Sources */,
 				C94F3D8A21C353DC008D94D6 /* HeaderSuspendViewController.swift in Sources */,
 				C94F3D9C21C3565A008D94D6 /* CellEditButton.swift in Sources */,
-				C94F3DA721C35837008D94D6 /* UIColorHandle.swift in Sources */,
+				11FE42C521CF2F1B00C83C6E /* UIColorHandle.swift in Sources */,
 				C91C8E7A21BA72AD00952B31 /* CaseyTableViewDelegate.swift in Sources */,
 				C91C8E4921BA5F0500952B31 /* AppDelegate.swift in Sources */,
 				C94F3D9E21C3565A008D94D6 /* DepositReportInfoCell.swift in Sources */,
 				C94F3D9A21C3565A008D94D6 /* ReportTableView.swift in Sources */,
-				C94F3DA821C35837008D94D6 /* UIViewFrameHandle.swift in Sources */,
-				C94F3DAA21C35837008D94D6 /* DispatchOnce.swift in Sources */,
+				11FE42C621CF2F1B00C83C6E /* UIViewFrameHandle.swift in Sources */,
+				11FE42CA21CF2F2500C83C6E /* DispatchOnce.swift in Sources */,
 				C94F3D8621C352CB008D94D6 /* TheoryInitViewController.swift in Sources */,
 				C94F3D8C21C353F3008D94D6 /* DeleteStyleViewController.swift in Sources */,
 				C91C8E7821BA711600952B31 /* RowInfoModel.swift in Sources */,
@@ -411,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CaseyTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CaseyTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

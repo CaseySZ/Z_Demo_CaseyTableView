@@ -187,7 +187,9 @@ extension UIView {
         self.moveToOffsetTest(extraOffset: extraOffset, animated: animated, usingSpringWithStiffness: usingSpringWithStiffness, initialVelocity: initialVelocity)
         
         
-        let className = NSStringFromClass(type(of: ReportTableView())) as String
+        //let className = NSStringFromClass(type(of: ReportTableView())) as String
+        
+        let className = NSStringFromClass(ReportTableView.classForCoder()) as String
         let tableview = self.searchSuperViewOfClassName(className) as? ReportTableView
         if tableview != nil {
             

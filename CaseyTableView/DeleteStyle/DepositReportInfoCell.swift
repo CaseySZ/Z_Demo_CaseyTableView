@@ -26,7 +26,7 @@ class DepositReportInfoCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -36,8 +36,21 @@ class DepositReportInfoCell: UITableViewCell {
         editButton.setTitle("新的style", for: .normal)
         editButton.titleLabel?.numberOfLines = 0
         editButton.setTitleColor(.red, for: .normal)
+        
     }
     
+//    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+//        
+//        super.init(style: style, reuseIdentifier: reuseIdentifier)
+//        
+//        self.backgroundColor = UIColor.clear
+//        self.contentView.backgroundColor = UIColor.clear
+//        
+//        editButton.setTitle("新的style", for: .normal)
+//        editButton.titleLabel?.numberOfLines = 0
+//        editButton.setTitleColor(.red, for: .normal)
+//    }
+//    
     
     
     override func layoutSubviews() {
