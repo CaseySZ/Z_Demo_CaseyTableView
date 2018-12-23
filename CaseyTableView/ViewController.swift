@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var _cellArr = ["initTheoryStudy", "Theory", "headerSuspend", "DeleteStyle"];
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.isTranslucent = false;
         _tableview.estimatedRowHeight = 0
         _tableview.delegate = self
         _tableview.dataSource = self

@@ -11,6 +11,7 @@
 		11FE42C621CF2F1B00C83C6E /* UIViewFrameHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C321CF2F1B00C83C6E /* UIViewFrameHandle.swift */; };
 		11FE42C721CF2F1B00C83C6E /* UIViewSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C421CF2F1B00C83C6E /* UIViewSearchView.swift */; };
 		11FE42CA21CF2F2500C83C6E /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42C921CF2F2500C83C6E /* DispatchOnce.swift */; };
+		11FE42DB21CF3A5500C83C6E /* HeadSuspendTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE42DA21CF3A5500C83C6E /* HeadSuspendTableView.swift */; };
 		C91C8E4921BA5F0500952B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E4821BA5F0500952B31 /* AppDelegate.swift */; };
 		C91C8E4B21BA5F0500952B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C8E4A21BA5F0500952B31 /* ViewController.swift */; };
 		C91C8E4E21BA5F0500952B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91C8E4C21BA5F0500952B31 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		11FE42C321CF2F1B00C83C6E /* UIViewFrameHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFrameHandle.swift; sourceTree = "<group>"; };
 		11FE42C421CF2F1B00C83C6E /* UIViewSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSearchView.swift; sourceTree = "<group>"; };
 		11FE42C921CF2F2500C83C6E /* DispatchOnce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
+		11FE42DA21CF3A5500C83C6E /* HeadSuspendTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSuspendTableView.swift; sourceTree = "<group>"; };
 		C91C8E4521BA5F0500952B31 /* CaseyTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseyTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91C8E4821BA5F0500952B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C91C8E4A21BA5F0500952B31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 			path = "DispatchQueue Category";
 			sourceTree = "<group>";
 		};
+		11FE42DC21CF3A8900C83C6E /* StudyTheory */ = {
+			isa = PBXGroup;
+			children = (
+				C94F3D8521C352CB008D94D6 /* TheoryInitViewController.swift */,
+			);
+			path = StudyTheory;
+			sourceTree = "<group>";
+		};
 		C91C8E3C21BA5F0500952B31 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 				C91C8E4821BA5F0500952B31 /* AppDelegate.swift */,
 				C91C8E4A21BA5F0500952B31 /* ViewController.swift */,
 				C94F3D8D21C35618008D94D6 /* ProjectFile.swift */,
+				11FE42DC21CF3A8900C83C6E /* StudyTheory */,
 				11FE42BF21CF2F0D00C83C6E /* BaseEvn */,
 				C91C8E7421BA683F00952B31 /* Theory */,
 				C94F3D8721C353A9008D94D6 /* HeaderSuspend */,
@@ -141,7 +152,6 @@
 		C91C8E7421BA683F00952B31 /* Theory */ = {
 			isa = PBXGroup;
 			children = (
-				C94F3D8521C352CB008D94D6 /* TheoryInitViewController.swift */,
 				C91C8E5A21BA5FC800952B31 /* TheoryViewController.swift */,
 				C91C8E7521BA6B1200952B31 /* CaseyTableView.swift */,
 				C91C8E7921BA72AD00952B31 /* CaseyTableViewDelegate.swift */,
@@ -154,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				C94F3D8921C353DC008D94D6 /* HeaderSuspendViewController.swift */,
+				11FE42DA21CF3A5500C83C6E /* HeadSuspendTableView.swift */,
 			);
 			path = HeaderSuspend;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 				11FE42C721CF2F1B00C83C6E /* UIViewSearchView.swift in Sources */,
 				C94F3D8A21C353DC008D94D6 /* HeaderSuspendViewController.swift in Sources */,
 				C94F3D9C21C3565A008D94D6 /* CellEditButton.swift in Sources */,
+				11FE42DB21CF3A5500C83C6E /* HeadSuspendTableView.swift in Sources */,
 				11FE42C521CF2F1B00C83C6E /* UIColorHandle.swift in Sources */,
 				C91C8E7A21BA72AD00952B31 /* CaseyTableViewDelegate.swift in Sources */,
 				C91C8E4921BA5F0500952B31 /* AppDelegate.swift in Sources */,
