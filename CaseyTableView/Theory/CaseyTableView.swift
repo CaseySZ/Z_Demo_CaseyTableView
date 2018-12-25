@@ -16,13 +16,13 @@ import UIKit
 
 /*入口reloadData
  
- 1 数据准备
-    1.1 准备cell的model
+ 1 准备数据
+    每一个cell的y， 高度height 保存
  
  
  2 UI处理
-    2.1 计算出当前屏幕可视区域要显示的cell
-    2.2 不在可视区域的cell移除到复用池
+    2.1显示当前可视区域的cell
+    2.2不在可视区域（屏幕内）的cell，移除到重用池里面
  */
 
 
@@ -35,23 +35,28 @@ class CaseyTableView: UIScrollView {
     var _visibleCellPoolInfo = Dictionary<String,UITableViewCell>()
     var _reuseCellPoolArr = Array<UITableViewCell>()
     
-    
+    // 刷tableview
     func reloadData()  {
-        
-        self.dataPrepare()
+        // 1 数据处理
+        self.handleData()
+        // 2 UI处理
         self.setNeedsLayout()
         
     }
     
-    func dataPrepare()  {
+     //  1 数据处理
+    func handleData()  {
         
         _rowModelArr.removeAll()
-        // 获取所有的indexPath
+        
         var totalHeight:CGFloat = 0.0
+        //  1.1 cell的数量
         if let rowCount =  cyDelegate?.tableView(self, numberOfRowsInSection: 0) {
             
+            // 1.2 计算每个cell的位置和高度
             for index in 0...rowCount {
                 
+                // 1.3 存储位置信息
                 var model = RowInfoModel()
                 model.y = totalHeight
                 let indexPath = IndexPath.init(row: index, section: 0)
@@ -65,12 +70,16 @@ class CaseyTableView: UIScrollView {
         self.contentSize = CGSize.init(width: self.frame.width, height: totalHeight)
     }
     
+     // 2 UI 处理
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        // 2.1 获取屏幕(可视区域)的起始位置和结束位置
         let startY = self.contentOffset.y < 0 ? 0 : self.contentOffset.y
         let endY = (self.contentOffset.y + self.frame.height > self.contentSize.height) ?  self.contentSize.height : (self.contentOffset.y + self.frame.height)
         
+        
+         // 2.2 获取当前 cell的开始索引 和 结束索引
         /*
         var startRowIndex = -1
         var endRowIndex = -1
@@ -98,6 +107,7 @@ class CaseyTableView: UIScrollView {
             return 
         }
         
+          // 2.3 显示当前可视区域的Cell
         for index in startRowIndex...endRowIndex {
             
             if let _ = _visibleCellPoolInfo[String(index)] {
@@ -119,7 +129,9 @@ class CaseyTableView: UIScrollView {
             }
         }
         
-        // 数据清理
+        // 2.4 清理UI （不在可视区域的cell，移除到重用池中去）
+        
+        // 把_visiblePooDict 不在可视区域的cell，移除到重用池中
         for indexKey in _visibleCellPoolInfo.keys {
             
             if Int(indexKey)! < startRowIndex ||  Int(indexKey)! > endRowIndex {
@@ -131,6 +143,8 @@ class CaseyTableView: UIScrollView {
         }
     }
     
+    
+    // 3 重用机制
     func dequeueReusableCell(withIdentifier: String) -> UITableViewCell? {
        
         if _reuseCellPoolArr.count > 0{
